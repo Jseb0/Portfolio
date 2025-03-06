@@ -24,6 +24,9 @@
 <body>
   <!-- Navbar -->
   <nav class="navbar">
+    <div class="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
     <ul class="nav-links">
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
@@ -166,6 +169,14 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({ once: true });
+  </script>
+  <!-- Hamburger Toggle Script -->
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
   </script>
 </body>
 </html>
