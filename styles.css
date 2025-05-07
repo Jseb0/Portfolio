@@ -352,91 +352,142 @@ html {
     background: rgba(100, 255, 218, 0.1);
 }
 
+/* Contact Section - Buttons */
+.contact-info {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between; /* This ensures the buttons are at the opposite ends */
+    gap: 1rem; /* Add space between the buttons */
+    width: 100%;
+  }
+  
+  .certificate-button {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+    background: transparent;
+    border: 2px solid #64ffda;
+    color: #64ffda;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+    flex: 1; /* Makes the buttons grow equally */
+    text-align: center;
+    max-width: 200px; /* Limit button width */
+  }
+  
+  .certificate-button:hover {
+    background: rgba(100, 255, 218, 0.1);
+  }
+  
+  .certificate-button:focus {
+    outline: none; /* Remove default focus outline */
+  }
+  
+  /* Ensures spacing and proper alignment */
+  .contact-info button {
+    width: 100%;
+    max-width: 250px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .contact-info {
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+  
+    .certificate-button {
+      width: 100%;
+    }
+  }
+  
+
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
-    /* Hamburger visible on mobile */
-    .hamburger {
-        display: block;
-        cursor: pointer;
-        font-size: 2rem;
-        color: #fff;
-    }
-    
-    /* Hide nav-links by default and style as a dropdown overlay */
-    .nav-links {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background: rgba(10, 25, 47, 0.95);
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        padding: 1rem 0;
-    }
-    
-    .nav-links.active {
-        display: flex;
-    }
-    
-    .navbar .nav-links {
-        flex-direction: column;
-    }
-    
-    .hero {
-        margin-top: 4rem;
-    }
-    
-    .hero-content h1 {
-        font-size: 2.5rem;
-        margin-bottom: 1rem;
-    }
-    
-    .hero-subtitle {
-        font-size: 1.2rem;
-        margin-bottom: 0.5rem;
-    }
-    
-    .second-line {
-        font-size: 1.1rem;
-    }
-    
-    .projects-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        padding: 1rem;
-        width: 100%;
-    }
-    
-    .project-card {
-        width: 100%;
-        margin: 1rem;
-        padding: 1.5rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .card, .technologies-card, .project-card, .about-card {
-        width: 100%;
-    }
-    
-    /* Adjust grids for skills & achievements on mobile */
-    .skills-grid, .achievements-grid {
-        grid-template-columns: 1fr;
-    }
+  /* Hamburger visible on mobile */
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #fff;
+  }
+  
+  /* Hide nav-links by default and style as a dropdown overlay */
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(10, 25, 47, 0.95);
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+  
+  .nav-links.active {
+    display: flex;
+  }
+  
+  .navbar .nav-links {
+    flex-direction: column;
+  }
+  
+  .hero {
+    margin-top: 4rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .second-line {
+    font-size: 1.1rem;
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 1rem;
+    width: 100%;
+  }
+  
+  .project-card {
+    width: 100%;
+    margin: 1rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card, .technologies-card, .project-card, .about-card {
+    width: 100%;
+  }
+  
+  /* Adjust grids for skills & achievements on mobile */
+  .skills-grid, .achievements-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Additional adjustments for very small screens */
 @media screen and (max-width: 480px) {
-    section {
-        margin: 1.5rem 0.75rem;
-        padding: 0.75rem;
-    }
-    
-    .about-card, .technologies-card, .project-card {
-        margin: 1rem 0.75rem;
-        padding: 1rem;
-    }
+  section {
+    margin: 1.5rem 0.75rem;
+    padding: 0.75rem;
+  }
+  
+  .about-card, .technologies-card, .project-card {
+    margin: 1rem 0.75rem;
+    padding: 1rem;
+  }
 }
